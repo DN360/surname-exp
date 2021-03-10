@@ -16,5 +16,6 @@ module.exports = {
   ],
   'rules': {
     'max-len': 0,
+    'valid-jsdoc': 0
   },
 };

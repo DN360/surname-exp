@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.main = void 0;
 var tslib_1 = require("tslib");
 var random_seed_1 = tslib_1.__importDefault(require("random-seed"));
 var shuffle_array_1 = tslib_1.__importDefault(require("shuffle-array"));
@@ -34,6 +33,9 @@ var test = function (originalArray, iter, rnd, selectivity) {
 var isEmpty = function (x) { return x === undefined || x === null ? true : false; };
 var concatArray = function (a, b) { return tslib_1.__spreadArray(tslib_1.__spreadArray([], a), b); };
 var concatObject = function (a, b) { return (tslib_1.__assign(tslib_1.__assign({}, a), b)); };
+/**
+ * 検証を行う関数
+ */
 var main = function (inputs, options) { return tslib_1.__awaiter(void 0, void 0, void 0, function () {
     var iter, times, selectivity, keys, rnd, arr, timesArray, numOfPeople, histogram, iteration, histogramPerKey, sortedHistogramPerKeys;
     return tslib_1.__generator(this, function (_a) {
@@ -93,7 +95,6 @@ var main = function (inputs, options) { return tslib_1.__awaiter(void 0, void 0,
         return [2 /*return*/];
     });
 }); };
-exports.main = main;
 var argv = yargs.option('seed', {
     alias: 's',
     description: 'シード値',
@@ -120,7 +121,7 @@ var argv = yargs.option('seed', {
     string: true,
     demandOption: true,
 }).help().argv;
-exports.main(argv.keys.map(function (key) { return key.split(','); }).map(function (_a) {
+main(argv.keys.map(function (key) { return key.split(','); }).map(function (_a) {
     var name = _a[0], num = _a[1];
     return [String(name), Number(num)];
 }), {
@@ -129,3 +130,4 @@ exports.main(argv.keys.map(function (key) { return key.split(','); }).map(functi
     iter: argv.iteration,
     testTimes: argv.times,
 });
+exports.default = main;

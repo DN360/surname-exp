@@ -90,7 +90,7 @@ var main = function (inputs, options) { return tslib_1.__awaiter(void 0, void 0,
             if (keys.map(function (key) { return sortedHistogramPerKeys[key]; }).map(function (hpk) { return hpk[rank].counter; }).reduce(function (a, b) { return a + b; }) === 0) {
                 return;
             }
-            console.info("\u7B2C" + (rank + 1) + "\u4F4D\t" + keys.map(function (key) { return sortedHistogramPerKeys[key][rank].amount + "\u4EBA(" + mathjs_1.round(sortedHistogramPerKeys[key][rank].counter / iter * 100, 3) + "%)"; }).join('\t'));
+            console.info("\u7B2C" + (rank + 1) + "\u4F4D\t" + keys.map(function (key) { return sortedHistogramPerKeys[key][rank].amount + "\u4EBA(" + mathjs_1.round(sortedHistogramPerKeys[key][rank].counter / times * 100, 3) + "%)"; }).join('\t'));
         });
         return [2 /*return*/];
     });

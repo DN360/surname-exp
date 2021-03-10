@@ -102,7 +102,7 @@ const main = async (inputs: InputType[], options?: Option) => {
       return;
     }
     console.info(`第${rank+1}位\t` + keys.map((key) => `${sortedHistogramPerKeys[key][rank].amount}人(${round(
-        sortedHistogramPerKeys[key][rank].counter / iter * 100
+        sortedHistogramPerKeys[key][rank].counter / times * 100
         , 3)}%)`).join('\t'));
   });
 };

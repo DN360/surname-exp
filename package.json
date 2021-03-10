@@ -1,0 +1,26 @@
+{
+  "name": "myoji",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mon.nagata <mon_nagata@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mathjs": "^6.0.11",
+    "@types/node": "^14.14.33",
+    "@types/random-seed": "^0.3.3",
+    "@types/shuffle-array": "^1.0.0",
+    "@types/yargs": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
+    "eslint-config-google": "^0.14.0",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "mathjs": "^9.2.0",
+    "random-seed": "^0.3.0",
+    "shuffle-array": "^1.0.1",
+    "yargs": "^16.2.0"
+  }
+}

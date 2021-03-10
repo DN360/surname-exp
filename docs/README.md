@@ -25,7 +25,7 @@ surname
 InputType[0] ... 名字 (`string` 型)\
 InputType[1] ... 人数 (`number` 型)
 
-Defined in: [main.ts:10](https://github.com/DN360/surname-exp/blob/c3e2b6f/src/main.ts#L10)
+Defined in: [main.ts:10](https://github.com/DN360/surname-exp/blob/be9d8d4/src/main.ts#L10)
 
 ## Functions
 
@@ -44,4 +44,4 @@ Name | Type |
 
 **Returns:** *Promise*<void\>
 
-Defined in: [main.ts:54](https://github.com/DN360/surname-exp/blob/c3e2b6f/src/main.ts#L54)
+Defined in: [main.ts:54](https://github.com/DN360/surname-exp/blob/be9d8d4/src/main.ts#L54)
